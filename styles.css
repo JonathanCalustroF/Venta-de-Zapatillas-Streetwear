@@ -207,10 +207,13 @@ html {
 
 .card-modelo {
 	background-color: #fff;
-	padding: 2rem 3rem;
+	padding: 2rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Centra los elementos dentro de la tarjeta */
 }
 
 .container-img {
@@ -218,7 +221,10 @@ html {
 }
 
 	.container-img img {
-		width: 100%;
+		width: 200px; /* Cambia este valor al tamaño deseado */
+		height: 200px; /* Cambia este valor al tamaño deseado */
+		object-fit: cover; /* Rellena el espacio con la imagen */
+		border-radius: 8px; /* Ajuste opcional para bordes redondeados */
 	}
 
 	.container-img .discount {
