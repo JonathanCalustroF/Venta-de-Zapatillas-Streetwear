@@ -162,7 +162,7 @@ html {
 /*               BANNER               */
 /* ********************************** */
 .banner {
-	background-image: linear-gradient(100deg, #000000, #00000020), url('img/zzzzzz.jpg');
+	background-image: linear-gradient(100deg, #000000, #00000020), url('img/banerjordan.png');
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
@@ -199,21 +199,18 @@ html {
 		border-radius: 3rem;
 	}
 /* Products */
-.container-modelos {
+.container-products {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	gap: 3rem;
 }
 
-.card-modelo {
+.card-product {
 	background-color: #fff;
-	padding: 2rem;
+	padding: 2rem 3rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-	display: flex;
-	flex-direction: column;
-	align-items: center; /* Centra los elementos dentro de la tarjeta */
 }
 
 .container-img {
@@ -221,10 +218,7 @@ html {
 }
 
 	.container-img img {
-		width: 200px; /* Cambia este valor al tamaño deseado */
-		height: 200px; /* Cambia este valor al tamaño deseado */
-		object-fit: cover; /* Rellena el espacio con la imagen */
-		border-radius: 8px; /* Ajuste opcional para bordes redondeados */
+		width: 100%;
 	}
 
 	.container-img .discount {
@@ -237,7 +231,7 @@ html {
 		font-size: 1.2rem;
 	}
 
-.card-modelo:hover .discount {
+.card-product:hover .discount {
 	background-color: #000;
 }
 
@@ -276,12 +270,12 @@ html {
 			color: #fff;
 		}
 
-.card-modelo:hover .button-group {
+.card-product:hover .button-group {
 	z-index: 0;
 	right: -1rem;
 }
 
-.content-card-modelo {
+.content-card-product {
 	display: grid;
 	justify-items: center;
 	grid-template-columns: 1fr 1fr;
@@ -299,7 +293,7 @@ html {
 		color: var(--primary-color);
 	}
 
-.content-card-modelo h3 {
+.content-card-product h3 {
 	grid-row: 2/3;
 	grid-column: 1/-1;
 	font-weight: 400;
@@ -308,7 +302,7 @@ html {
 	cursor: pointer;
 }
 
-	.content-card-modelo h3:hover {
+	.content-card-product h3:hover {
 		color: var(--primary-color);
 	}
 
@@ -337,14 +331,14 @@ html {
 		color: #fff;
 	}
 
-.content-card-modelo .price {
+.content-card-product .price {
 	justify-self: end;
 	align-self: center;
 	font-size: 1.7rem;
 	font-weight: 600;
 }
 
-	.content-card-modelo .price span {
+	.content-card-product .price span {
 		font-size: 1.5rem;
 		font-weight: 400;
 		text-decoration: line-through;
