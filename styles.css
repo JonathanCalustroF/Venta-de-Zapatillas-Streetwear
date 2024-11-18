@@ -166,6 +166,7 @@ html {
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
+	margin-bottom: 4rem;
 }
 
 .content-banner {
@@ -201,8 +202,9 @@ html {
 /* Products */
 .container-products {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	gap: 3rem;
+	grid-template-columns: repeat(5, 1fr); /* 5 columnas exactas */
+	gap: 3rem; /* Espaciado entre productos */
+	justify-content: center; /* Centra la fila si hay menos de 5 productos */
 }
 
 .card-product {
@@ -211,6 +213,10 @@ html {
 	border-radius: 0.5rem;
 	cursor: pointer;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+	height: 30rem; /* Fija la altura */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* Espaciado interno uniforme */
 }
 
 .container-img {
@@ -352,6 +358,7 @@ html {
 
 .footer {
 	background-color: var(--primary-color);
+	margin-top: 5rem;
 }
 
 .container-footer {
@@ -366,6 +373,7 @@ html {
 	grid-template-columns: repeat(3, 1fr) 30rem;
 	gap: 3rem;
 	justify-items: center;
+
 }
 
 .title-footer {
